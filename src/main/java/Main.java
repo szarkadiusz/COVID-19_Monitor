@@ -70,10 +70,10 @@ public class Main extends JFrame {
 
     private static void updateDateCreate() throws IOException {
         String getUpdateDate = createHttpResponse().getString("time");
-       StringBuilder sb = new StringBuilder();
-       sb.append(getUpdateDate.substring(0,10));
-       sb.append(" ").append(getUpdateDate.substring(11,19));
-       sb.toString();
+        StringBuilder sb = new StringBuilder();
+        sb.append(getUpdateDate.substring(0, 10));
+        sb.append(" ").append(getUpdateDate.substring(11, 19));
+        sb.toString();
         updateDate = new JLabel("Updated: " + sb);
         jPanel.add(updateDate);
         updateDate.setForeground(Color.white);
@@ -210,5 +210,3 @@ public class Main extends JFrame {
 
     }
 }
-
-
